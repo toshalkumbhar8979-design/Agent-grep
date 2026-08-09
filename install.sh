@@ -7,7 +7,6 @@ BINARY="agtgrep"
 
 echo "Installing ${BINARY}..."
 
-# Attempt to fetch the latest release tag from GitHub API
 LATEST_TAG=$(curl -s "https://api.github.com/repos/${REPO}/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' || true)
 
 if [ -n "$LATEST_TAG" ]; then
@@ -39,7 +38,6 @@ if [ -n "$LATEST_TAG" ]; then
     fi
 fi
 
-# Fallback method if no release tarball exists yet
 echo "No pre-compiled binary release found. Falling back to 'go install'..."
 go install "github.com/${REPO}@latest"
 echo "Successfully installed ${BINARY} via go install!"
