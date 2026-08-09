@@ -1,4 +1,4 @@
-module github.com/toshalkumbhar8979/agent-grep
+module github.com/toshalkumbhar8979-design/Agent-grep
 
 go 1.26.5
 
