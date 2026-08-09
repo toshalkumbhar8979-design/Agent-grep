@@ -1,4 +1,3 @@
-cat << 'EOF' > install.sh
 #!/bin/sh
 set -e
 
@@ -41,4 +40,3 @@ fi
 echo "No pre-compiled binary release found. Falling back to 'go install'..."
 go install "github.com/${REPO}@latest"
 echo "Successfully installed ${BINARY} via go install!"
-EOF

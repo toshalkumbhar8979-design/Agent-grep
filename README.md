@@ -21,13 +21,15 @@ Unlike traditional text-based search tools, `agtgrep` leverages **Tree-Sitter** 
 ### 1. One-Line Installer (Recommended)
 Install `agtgrep` instantly:
 ```bash
-curl -sSL https://raw.githubusercontent.com/toshalkumbhar8979/agent-grep/main/install.sh | sh
+curl -sSL [https://raw.githubusercontent.com/toshalkumbhar8979-design/Agent-grep/main/install.sh](https://raw.githubusercontent.com/toshalkumbhar8979-design/Agent-grep/main/install.sh) | sh
 ```
 
 ### 2. Using Go Install
 If you have Go installed, you can install the latest version directly:
 ```bash
-GOPROXY=direct go install github.com/toshalkumbhar8979-design/Agent-grep@latest
+GOPROXY=direct go install github.com/toshalkumbhar8979-design/Agent-grep@latest 
+OR 
+go install github.com/toshalkumbhar8979-design/Agent-grep@latest
 ```
 *Note: Ensure your `$GOPATH/bin` is in your `PATH`.*
 
