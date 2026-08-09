@@ -25,13 +25,12 @@ curl -sSL [https://raw.githubusercontent.com/toshalkumbhar8979-design/Agent-grep
 ```
 
 ### 2. Using Go Install
+
 If you have Go installed, you can install the latest version directly:
+
+**Standard Install**
 ```bash
-GOPROXY=direct go install github.com/toshalkumbhar8979-design/Agent-grep@latest
-```
-OR
-```bash 
-go install github.com/toshalkumbhar8979-design/Agent-grep@latest
+go install [github.com/toshalkumbhar8979-design/Agent-grep@latest](https://github.com/toshalkumbhar8979-design/Agent-grep@latest)
 ```
 *Note: Ensure your `$GOPATH/bin` is in your `PATH`.*
 
